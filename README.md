@@ -1,6 +1,6 @@
 # 环境：
-"""python3.6.3
-tensorflow 1.9.0"""
+    python3.6.3
+    tensorflow 1.9.0
 
 # 结构目录
    data_path---->存储数据样别等数据
