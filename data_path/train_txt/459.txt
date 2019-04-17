@@ -1,0 +1,16 @@
+“	O
+攻	O
+关	O
+主	O
+任	O
+”	O
+苏	B-PER
+伟	I-PER
+（	O
+普	O
+通	O
+人	O
+的	O
+故	O
+事	O
+）	O

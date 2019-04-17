@@ -1,0 +1,16 @@
+这	O
+就	O
+是	O
+五	O
+千	O
+年	O
+前	O
+蚩	B-PER
+尤	I-PER
+屯	O
+兵	O
+据	O
+守	O
+之	O
+寨	O
+？	O

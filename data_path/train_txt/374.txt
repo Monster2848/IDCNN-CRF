@@ -1,0 +1,15 @@
+陈	B-PER
+明	I-PER
+亮	I-PER
+又	O
+哭	O
+又	O
+闹	O
+，	O
+但	O
+仍	O
+无	O
+济	O
+于	O
+事	O
+。	O

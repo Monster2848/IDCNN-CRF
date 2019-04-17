@@ -1,0 +1,15 @@
+日	O
+光	O
+，	O
+揭	O
+开	O
+了	O
+蚩	B-LOC
+尤	I-LOC
+寨	I-LOC
+神	O
+秘	O
+的	O
+面	O
+纱	O
+。	O

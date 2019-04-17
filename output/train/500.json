@@ -1,0 +1,272 @@
+{
+  "data_path\\train_txt\\216.txt": {
+    "labels_true": {
+      "LOC": [
+        "佛湾"
+      ],
+      "PER": [
+        "赵智凤"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "佛湾"
+      ],
+      "PER": [
+        "赵智凤"
+      ]
+    }
+  },
+  "data_path\\train_txt\\375.txt": {
+    "labels_true": {
+      "PER": [
+        "陈明亮"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "陈明亮"
+      ]
+    }
+  },
+  "data_path\\train_txt\\386.txt": {
+    "labels_true": {
+      "PER": [
+        "郭",
+        "梁"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "郭",
+        "梁"
+      ]
+    }
+  },
+  "data_path\\train_txt\\20.txt": {
+    "labels_true": {
+      "LOC": [
+        "欧",
+        "美",
+        "港",
+        "台"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "欧",
+        "美",
+        "港",
+        "台"
+      ]
+    }
+  },
+  "data_path\\train_txt\\344.txt": {
+    "labels_true": {
+      "PER": [
+        "邓颖超",
+        "宋美龄"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "邓颖超",
+        "宋美龄"
+      ]
+    }
+  },
+  "data_path\\train_txt\\208.txt": {
+    "labels_true": {
+      "LOC": [
+        "华大足",
+        "大足石窟"
+      ],
+      "PER": [
+        "韩素音"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "华大足",
+        "大足石窟"
+      ],
+      "PER": [
+        "韩素音"
+      ]
+    }
+  },
+  "data_path\\train_txt\\100.txt": {
+    "labels_true": {
+      "LOC": [
+        "玉峰"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "玉峰"
+      ]
+    }
+  },
+  "data_path\\train_txt\\407.txt": {
+    "labels_true": {
+      "PER": [
+        "刘"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "刘"
+      ]
+    }
+  },
+  "data_path\\train_txt\\98.txt": {
+    "labels_true": {
+      "LOC": [
+        "栋梁河"
+      ]
+    },
+    "labels_pred": {}
+  },
+  "data_path\\train_txt\\378.txt": {
+    "labels_true": {
+      "PER": [
+        "陈明亮"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "陈明亮"
+      ]
+    }
+  },
+  "data_path\\train_txt\\373.txt": {
+    "labels_true": {
+      "PER": [
+        "陈明亮"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "陈明亮"
+      ]
+    }
+  },
+  "data_path\\train_txt\\243.txt": {
+    "labels_true": {
+      "LOC": [
+        "华夏"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "华夏"
+      ]
+    }
+  },
+  "data_path\\train_txt\\385.txt": {
+    "labels_true": {
+      "PER": [
+        "梁",
+        "郭"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "梁",
+        "郭"
+      ]
+    }
+  },
+  "data_path\\train_txt\\175.txt": {
+    "labels_true": {
+      "PER": [
+        "尧"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "尧"
+      ]
+    }
+  },
+  "data_path\\train_txt\\289.txt": {
+    "labels_true": {
+      "LOC": [
+        "蚩尤寨"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "蚩尤寨"
+      ]
+    }
+  },
+  "data_path\\train_txt\\286.txt": {
+    "labels_true": {
+      "LOC": [
+        "蚩尤北寨",
+        "蚩尤"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "蚩尤北寨",
+        "蚩尤"
+      ]
+    }
+  },
+  "data_path\\train_txt\\82.txt": {
+    "labels_true": {
+      "LOC": [
+        "玉峰山",
+        "玉峰"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "玉峰山",
+        "玉峰"
+      ]
+    }
+  },
+  "data_path\\train_txt\\396.txt": {
+    "labels_true": {
+      "PER": [
+        "梁",
+        "郭"
+      ]
+    },
+    "labels_pred": {
+      "PER": [
+        "梁",
+        "郭"
+      ]
+    }
+  },
+  "data_path\\train_txt\\418.txt": {
+    "labels_true": {
+      "LOC": [
+        "京"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "京"
+      ]
+    }
+  },
+  "data_path\\train_txt\\292.txt": {
+    "labels_true": {
+      "LOC": [
+        "蚩尤寨",
+        "龙王塘村"
+      ]
+    },
+    "labels_pred": {
+      "LOC": [
+        "蚩尤寨",
+        "龙王塘村"
+      ]
+    }
+  }
+}

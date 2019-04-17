@@ -1,0 +1,17 @@
+关	O
+心	O
+和	O
+帮	O
+助	O
+王	B-PER
+学	I-PER
+强	I-PER
+等	O
+贫	O
+困	O
+地	O
+区	O
+的	O
+孩	O
+子	O
+，	O

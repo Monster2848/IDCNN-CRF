@@ -1,0 +1,15 @@
+人	B-LOC
+民	I-LOC
+大	I-LOC
+会	I-LOC
+堂	I-LOC
+的	O
+会	O
+议	O
+已	O
+经	O
+过	O
+去	O
+十	O
+年	O
+。	O
