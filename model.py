@@ -148,10 +148,14 @@ class Crf_model(TFrecord):
             ),
             tf.train.CheckpointSaverHook(
                 checkpoint_dir=self.logdir, save_secs=20
+            ),
+            tf.train.SummarySaverHook(
+                output_dir=self.logdir, save_steps=10,
+                summary_op=tf.summary.merge_all()
             )
         ]
         saver = tf.train.Saver()
-        with tf.train.MonitoredSession(hooks=hooks) as sess:
+        with tf.train.SingularMonitoredSession(hooks=hooks, checkpoint_dir=self.logdir) as sess:
             saver.restore(sess, tf.train.latest_checkpoint(self.logdir))
             if self.pattern == 'train':
                 while not sess.should_stop():
