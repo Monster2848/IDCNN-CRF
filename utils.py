@@ -58,10 +58,11 @@ class Txt(Parameter):
             json.dump(data, f, ensure_ascii=False, indent=2)
 
     def output_utils(self, entrys, texts):
+        texts = texts if isinstance(texts,str) else texts.decode('utf-8')
         data = {}
         tags = []
         _ = []
-        for entry, text in zip(entrys, texts.decode('utf-8')):
+        for entry, text in zip(entrys, texts):
             if entry == "O":
                 if len(_) > 0:
                     tags.append(_)
