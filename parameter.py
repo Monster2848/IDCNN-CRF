@@ -15,7 +15,7 @@ class Parameter():
         self.pattern = 'train'
         self.info_path = os.path.join('data_path', 'info.json')
         self.batch_size = 20
-        self.file_generation = False
+        self.file_generation = True
 
     def Txt_parameter(self):
         self.data_amount = 4
@@ -33,6 +33,8 @@ class Parameter():
         elif self.pattern == 'test':
             self.epoch = 1
             self.record_path = os.path.join('data_path', 'test_data')
+        elif self.pattern == 'demo':
+            self.file_generation = False
 
         self.max_length = 3500 or self.batch_size
         self.min_length = 8
