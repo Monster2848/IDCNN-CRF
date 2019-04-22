@@ -2,7 +2,6 @@
 import logging
 import os
 import tensorflow as tf
-import numpy as np
 from utils import TFrecord
 
 
@@ -34,9 +33,13 @@ class Crf_model(TFrecord):
         if self.pattern == 'train':
             self.id, self.text, self.char_inputs, self.targets = self.record_load()
             self.dropout = tf.constant(0.5)
-        else:
+        elif self.pattern == 'test':
             self.batch_size = 1
             self.id, self.text, self.char_inputs, self.targets = self.record_load()
+            self.dropout = tf.constant(1.0)
+        else:
+            self.char_inputs = tf.placeholder(dtype=tf.int32, shape=[None, None], name="ChatInputs")
+            self.targets = tf.placeholder(dtype=tf.int32, shape=[None, None], name="Targets")
             self.dropout = tf.constant(1.0)
         __used = tf.sign(tf.abs(self.char_inputs))
         __length = tf.reduce_sum(__used, reduction_indices=1)
@@ -165,7 +168,12 @@ class Crf_model(TFrecord):
                     if global_step % 100 == 0:
                         decodes = self.__transition(lengths, logits, transition)
                         self.labels_output(global_step, targets, decodes, texts, ids)
-            elif self.pattern == 'test':
+
+    def demo(self):
+        saver = tf.train.Saver()
+        with tf.Session() as sess:
+            saver.restore(sess, tf.train.latest_checkpoint(self.logdir))
+            if self.pattern == 'test':
                 global_step = 0
                 while not sess.should_stop():
                     logits, ids, texts, targets, lengths, transition = sess.run(
@@ -173,3 +181,17 @@ class Crf_model(TFrecord):
                     decodes = self.__transition(lengths, logits, transition)
                     self.labels_output(global_step, targets, decodes, texts, ids)
                     global_step += 1
+            else:
+                while True:
+                    target = input('输入测试的文字:')
+                    content = [
+                        [self.word2index[c] if c in self.word2index else self.word2index['<UNK>'] for c in target]]
+                    logits, loss, lengths, transition = sess.run(
+                        [self.logits, self.loss, self.lengths, self.transition_params], feed_dict={
+                            self.char_inputs: content,
+                            self.targets: [[0] * len(c) for c in content]
+                        })
+                    decodes = self.__transition(lengths, logits, transition)
+                    decodes = [[self.index2label[y] for y in x] for x in decodes]
+                    print([self.output_utils(x, target) for x in decodes])
+
